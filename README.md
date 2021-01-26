@@ -7,3 +7,7 @@ or
 python manage.py runserver
 browse the app on your browser through http://localhost:8000/
 more info can be found in Commit #2
+
+superuser credentials to access admin panel
+user: admin
+pass: pass123

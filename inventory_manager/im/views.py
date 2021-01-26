@@ -10,14 +10,14 @@ class DonationListView(ListView):
     model = Donation
     template_name = 'im/donation_list.html'
     context_object_name = 'donations'
-    ordering = ['pk']
+    ordering = ['-pk']
     paginate_by=5
 
 class InventoryListView(ListView):
     model = Inventory
     template_name = 'im/inventory_list.html'
     context_object_name = 'inventories'
-    ordering = ['pk']
+    ordering = ['-pk']
     paginate_by=5
 
 def makeDonation(request):

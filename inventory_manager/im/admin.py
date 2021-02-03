@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Donation, Inventory
+from .models import LdapDonation, LdapInventory
 
-admin.site.register(Donation)
-admin.site.register(Inventory)
+admin.site.register(LdapDonation)
+admin.site.register(LdapInventory)

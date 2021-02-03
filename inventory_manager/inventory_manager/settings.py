@@ -76,11 +76,18 @@ WSGI_APPLICATION = 'inventory_manager.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
+    'ldap': {
+        'ENGINE': 'ldapdb.backends.ldap',
+        'NAME': 'ldap://192.168.1.202',
+        'USER': 'cn=admin,dc=birunisoft,dc=com',
+        'PASSWORD': '4u2xsa2z',
+    },
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+DATABASE_ROUTERS = ['ldapdb.router.Router']
 
 
 # Password validation

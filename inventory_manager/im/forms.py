@@ -1,8 +1,8 @@
 from django import forms
-from .models import Donation
+from .models import LdapDonation
 
 class DonationCreateForm(forms.ModelForm):
 
     class Meta:
-        model = Donation
+        model = LdapDonation
         fields = ['item', 'quantity', 'description', 'donor']

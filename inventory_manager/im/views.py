@@ -29,7 +29,7 @@ def makeDonation(request):
             obj.save()
             donated_item = form.cleaned_data['item']
             print(donated_item)
-            item = form.cleaned_data.get('item')
+            #item = form.cleaned_data.get('item')
             name = form.cleaned_data.get('donor')
             quantity = form.cleaned_data.get('quantity')
             # feedback and redirect user
